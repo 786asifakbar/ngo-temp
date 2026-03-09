@@ -6,14 +6,28 @@ const Volunteer = () => {
 
       <div className="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
 
-        {/* Left Image */}
+        {/* Left Images */}
 
-        <div>
+        <div className="grid grid-cols-2 gap-4">
+
           <img
-            src="https://images.unsplash.com/photo-1593113598332-cd59a93bce38?auto=format&fit=crop&w=900&q=80"
-            alt="Volunteers"
-            className="rounded-xl shadow-lg"
+            src="https://images.unsplash.com/photo-1469571486292-b53601020c0b?w=800"
+            alt="Volunteers helping"
+            className="rounded-xl shadow-lg col-span-2 h-56 w-full object-cover"
           />
+
+          <img
+            src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800"
+            alt="Community help"
+            className="rounded-xl shadow-lg h-40 w-full object-cover"
+          />
+
+          <img
+            src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800"
+            alt="Charity work"
+            className="rounded-xl shadow-lg h-40 w-full object-cover"
+          />
+
         </div>
 
         {/* Right Content */}
@@ -29,8 +43,6 @@ const Volunteer = () => {
             you can make a real difference in people's lives through
             education, healthcare, and humanitarian support.
           </p>
-
-          {/* Volunteer Form */}
 
           <form className="space-y-4">
 
@@ -71,4 +83,4 @@ const Volunteer = () => {
   );
 };
 
-export default Volunteer
+export default Volunteer;

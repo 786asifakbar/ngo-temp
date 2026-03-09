@@ -1,38 +1,55 @@
 import React from "react";
-import Button from "./Button";
+import { FaHandsHelping, FaDonate, FaUsers } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <section className="w-full min-h-screen flex items-center bg-gray-50">
+    <section className="bg-gradient-to-r from-green-600 to-emerald-500 text-white py-24">
 
-      <div className="container mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+      <div className="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
 
         {/* LEFT CONTENT */}
 
-        <div className="space-y-6">
+        <div>
 
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-800 leading-tight">
+          <h1 className="text-5xl font-bold leading-tight mb-6">
             Together We Can Make the World Better
           </h1>
 
-          <p className="text-gray-600 text-lg">
+          <p className="text-lg mb-8">
             Support our mission to help underprivileged communities through
-            education, healthcare, and humanitarian aid.
+            education, healthcare and humanitarian aid.
           </p>
 
-          {/* BUTTONS */}
+          <div className="flex gap-4 mb-10">
 
-          <div className="flex gap-4">
+            <button className="bg-white text-green-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100">
+              Donate Now
+            </button>
 
-            <Button
-              text="Donate Now"
-              style="bg-green-600 text-white hover:bg-green-700"
-            />
+            <button className="border border-white px-6 py-3 rounded-lg hover:bg-white hover:text-green-600">
+              Start a Campaign
+            </button>
 
-            <Button
-              text="Start a Campaign"
-              style="border border-green-600 text-green-600 hover:bg-green-600 hover:text-white"
-            />
+          </div>
+
+          {/* TRUST BADGES */}
+
+          <div className="flex gap-8">
+
+            <div className="flex items-center gap-2">
+              <FaHandsHelping size={24}/>
+              <span>10K+ People Helped</span>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <FaUsers size={24}/>
+              <span>120 Volunteers</span>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <FaDonate size={24}/>
+              <span>$500K Donations</span>
+            </div>
 
           </div>
 
@@ -40,12 +57,12 @@ const Hero = () => {
 
         {/* RIGHT IMAGE */}
 
-        <div className="relative">
+        <div>
 
           <img
-            src="https://images.unsplash.com/photo-1593113598332-cd59a93bce38?auto=format&fit=crop&w=900&q=80"
-            alt="NGO Help"
-            className="rounded-xl shadow-xl"
+            src="https://images.unsplash.com/photo-1593113598332-cd59a93bce38?w=900"
+            alt="Helping people"
+            className="rounded-2xl shadow-2xl"
           />
 
         </div>

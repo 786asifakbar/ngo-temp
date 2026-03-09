@@ -1,44 +1,62 @@
-import React from "react"
+import React from "react";
 
 const Contact = () => {
   return (
-    <section className="py-20">
+    <section className="py-20 bg-gray-100">
 
-      <div className="container mx-auto px-6 max-w-xl">
+      <div className="container mx-auto px-6 grid md:grid-cols-2 gap-12">
 
-        <h2 className="text-3xl font-bold text-center mb-8">
-          Contact Us
-        </h2>
+        {/* CONTACT FORM */}
 
-        <form className="space-y-4">
+        <div>
 
-          <input
-            type="text"
-            placeholder="Name"
-            className="w-full border p-3 rounded-lg"
-          />
+          <h2 className="text-3xl font-bold mb-6">
+            Contact Us
+          </h2>
 
-          <input
-            type="email"
-            placeholder="Email"
-            className="w-full border p-3 rounded-lg"
-          />
+          <form className="space-y-4">
 
-          <textarea
-            placeholder="Message"
-            className="w-full border p-3 rounded-lg"
-          ></textarea>
+            <input
+              type="text"
+              placeholder="Name"
+              className="w-full border p-3 rounded-lg"
+            />
 
-          <button className="bg-green-600 text-white px-6 py-3 rounded-lg w-full">
-            Send Message
-          </button>
+            <input
+              type="email"
+              placeholder="Email"
+              className="w-full border p-3 rounded-lg"
+            />
 
-        </form>
+            <textarea
+              placeholder="Message"
+              className="w-full border p-3 rounded-lg"
+            ></textarea>
+
+            <button className="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700">
+              Send Message
+            </button>
+
+          </form>
+
+        </div>
+
+        {/* GOOGLE MAP */}
+
+        <div>
+
+          <iframe
+            title="map"
+            src="https://www.google.com/maps?q=karachi&output=embed"
+            className="w-full h-80 rounded-xl border"
+          ></iframe>
+
+        </div>
 
       </div>
 
     </section>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;
