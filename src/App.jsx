@@ -9,6 +9,12 @@ import Stats from "./components/Stats"
 import Testimonials from "./components/Testimonials"
 import Contact from "./components/Contact"
 import Footer from "./components/Footer"
+import Donation from "./components/Donation";
+import Impact from "./components/Impact";
+
+
+
+
 
 function App() {
   return (
@@ -22,6 +28,8 @@ function App() {
       <Stats />
       <Team />
       <Testimonials />
+      <Donation />
+      <Impact />
       <Contact />
       <Footer />
     </>
