@@ -60,7 +60,7 @@ const Hero = () => {
         <div>
 
           <img
-            src="https://images.unsplash.com/photo-1593113598332-cd59a93bce38?w=900"
+            src="../assets/hero.jfif"
             alt="Helping people"
             className="rounded-2xl shadow-2xl"
           />
