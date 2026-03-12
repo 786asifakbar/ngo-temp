@@ -1,6 +1,10 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { FaArrowLeft } from "react-icons/fa";
 
 const Donation = () => {
+
+  const navigate = useNavigate();
 
   const [amount, setAmount] = useState(25);
 
@@ -9,7 +13,16 @@ const Donation = () => {
   return (
     <section className="py-20 bg-gray-100">
 
-      <div className="max-w-3xl mx-auto bg-white shadow-xl rounded-xl p-10">
+      <div className="max-w-3xl mx-auto bg-white shadow-xl rounded-xl p-10 relative">
+
+        {/* Back Arrow Button */}
+
+        <button
+          onClick={() => navigate(-1)}
+          className="absolute top-6 left-6 text-green-600 text-xl hover:text-green-800"
+        >
+          <FaArrowLeft />
+        </button>
 
         <h2 className="text-3xl font-bold text-center mb-6">
           Make a Donation
@@ -88,8 +101,6 @@ const Donation = () => {
         <button className="w-full bg-green-600 text-white py-3 rounded-lg font-semibold hover:bg-green-700 transition">
           Donate ${amount}
         </button>
-
-        {/* Security Text */}
 
         <p className="text-sm text-gray-500 text-center mt-4">
           🔒 Your donation is secure and encrypted.

@@ -8,23 +8,17 @@ import Donation from "./pages/Donation"
 import Footer from "./components/Footer";
 
 
-
-
-
 function App() {
   return (
-    <> 
-      
+    <>       
       <Navbar />
-
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/campaigns" element={<Campaigns />} />
         <Route path="/volunteer" element={<Volunteer />} />
         <Route path="/contact" element={<Contact />} />
-      <Route path="/donation" element={<Donation />} />
+        <Route path="/donation" element={<Donation />} />
       </Routes>
-
       <Footer />
     </>
   );

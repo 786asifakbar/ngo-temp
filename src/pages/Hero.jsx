@@ -25,7 +25,7 @@ const Hero = () => {
 
           <div className="flex gap-4 mb-10">
 
-            <NavLink to="/donate">
+            <NavLink to="/Donation">
               <button className="bg-white text-green-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
                 Donate Now
               </button>

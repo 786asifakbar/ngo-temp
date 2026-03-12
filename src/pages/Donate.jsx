@@ -1,4 +1,6 @@
 import React from "react"
+import { NavLink } from "react-router-dom"
+
 
 const Donate = () => {
   return (
@@ -12,10 +14,11 @@ const Donate = () => {
         Your donation can change someone's life.
       </p>
 
+       <NavLink to="/Donation">
       <button className="bg-white text-green-600 px-6 py-3 rounded-lg font-semibold">
         Donate Now
       </button>
-
+</NavLink>
     </section>
   )
 }
