@@ -11,7 +11,7 @@ const Volunteer = () => {
         <div className="grid grid-cols-2 gap-4">
 
           <img
-            src="https://images.unsplash.com/photo-1469571486292-b53601020c0b?w=800"
+            src="https://media.istockphoto.com/id/870402320/photo/a-social-worker-meeting-with-a-group-of-villagers.jpg?s=1024x1024&w=is&k=20&c=D7VStYA3q4pgZ85OsEDgVawhcqFGDPZyHwX3AZBb0i4="
             alt="Volunteers helping"
             className="rounded-xl shadow-lg col-span-2 h-56 w-full object-cover"
           />

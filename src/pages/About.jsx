@@ -18,7 +18,7 @@ const About = () => {
         </div>
 
         <img
-          src="https://images.unsplash.com/photo-1593113598332-cd59a93bce38"
+          src="https://media.istockphoto.com/id/870402320/photo/a-social-worker-meeting-with-a-group-of-villagers.jpg?s=1024x1024&w=is&k=20&c=D7VStYA3q4pgZ85OsEDgVawhcqFGDPZyHwX3AZBb0i4="
           className="rounded-xl"
         />
 

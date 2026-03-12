@@ -66,7 +66,7 @@ const Hero = () => {
 
         <div>
           <img
-            src="https://images.unsplash.com/photo-1593113598332-cd59a93bce38?w=900"
+            src="https://media.gettyimages.com/id/1498170916/photo/a-couple-is-taking-a-bag-of-food-at-the-food-and-clothes-bank.jpg?s=612x612&w=gi&k=20&c=OQXzpRYIt4_vr0b2tTz9Wsz8aCPi9FgUBwGSEeJaToM="
             alt="Helping people"
             className="rounded-2xl shadow-2xl w-full"
           />
