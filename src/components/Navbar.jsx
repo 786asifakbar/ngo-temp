@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
 
@@ -18,6 +19,11 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
   }, []);
 
+  const linkStyle = ({ isActive }) =>
+    isActive
+      ? "text-green-600 font-semibold"
+      : "hover:text-green-600";
+
   return (
     <nav
       className={`fixed w-full z-50 transition-all duration-300 ${
@@ -33,17 +39,40 @@ const Navbar = () => {
         {/* Desktop Menu */}
 
         <ul className="hidden md:flex space-x-8 font-medium">
-          <li className="hover:text-green-600 cursor-pointer">Home</li>
-          <li className="hover:text-green-600 cursor-pointer">Campaigns</li>
-          <li className="hover:text-green-600 cursor-pointer">Volunteer</li>
-          <li className="hover:text-green-600 cursor-pointer">Contact</li>
+
+          <li>
+            <NavLink to="/" className={linkStyle}>
+              Home
+            </NavLink>
+          </li>
+
+          <li>
+            <NavLink to="/campaigns" className={linkStyle}>
+              Campaigns
+            </NavLink>
+          </li>
+
+          <li>
+            <NavLink to="/volunteer" className={linkStyle}>
+              Volunteer
+            </NavLink>
+          </li>
+
+          <li>
+            <NavLink to="/contact" className={linkStyle}>
+              Contact
+            </NavLink>
+          </li>
+
         </ul>
 
         {/* Donate Button */}
 
-        <button className="hidden md:block bg-green-600 text-white px-5 py-2 rounded-lg hover:bg-green-700">
-          Donate
-        </button>
+        <NavLink to="/donate">
+          <button className="hidden md:block bg-green-600 text-white px-5 py-2 rounded-lg hover:bg-green-700">
+            Donate
+          </button>
+        </NavLink>
 
         {/* Mobile Menu Button */}
 
@@ -58,12 +87,15 @@ const Navbar = () => {
 
       {menuOpen && (
         <div className="md:hidden bg-white shadow-lg p-6 space-y-4">
-          <p>Home</p>
-          <p>Campaigns</p>
-          <p>Volunteer</p>
-          <p>Contact</p>
+
+          <NavLink to="/" className={linkStyle}>Home</NavLink>
+          <NavLink to="/campaigns" className={linkStyle}>Campaigns</NavLink>
+          <NavLink to="/volunteer" className={linkStyle}>Volunteer</NavLink>
+          <NavLink to="/contact" className={linkStyle}>Contact</NavLink>
+
         </div>
       )}
+
     </nav>
   );
 };

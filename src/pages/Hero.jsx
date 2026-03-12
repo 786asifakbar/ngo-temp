@@ -1,5 +1,6 @@
 import React from "react";
 import { FaHandsHelping, FaDonate, FaUsers } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -20,15 +21,21 @@ const Hero = () => {
             education, healthcare and humanitarian aid.
           </p>
 
+          {/* BUTTONS WITH NAVLINK */}
+
           <div className="flex gap-4 mb-10">
 
-            <button className="bg-white text-green-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100">
-              Donate Now
-            </button>
+            <NavLink to="/donate">
+              <button className="bg-white text-green-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+                Donate Now
+              </button>
+            </NavLink>
 
-            <button className="border border-white px-6 py-3 rounded-lg hover:bg-white hover:text-green-600">
-              Start a Campaign
-            </button>
+            <NavLink to="/campaigns">
+              <button className="border border-white px-6 py-3 rounded-lg hover:bg-white hover:text-green-600 transition">
+                Start a Campaign
+              </button>
+            </NavLink>
 
           </div>
 
@@ -58,13 +65,11 @@ const Hero = () => {
         {/* RIGHT IMAGE */}
 
         <div>
-
           <img
-            src="../assets/hero.jfif"
+            src="https://images.unsplash.com/photo-1593113598332-cd59a93bce38?w=900"
             alt="Helping people"
-            className="rounded-2xl shadow-2xl"
+            className="rounded-2xl shadow-2xl w-full"
           />
-
         </div>
 
       </div>
