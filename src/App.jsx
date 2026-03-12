@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Campaigns from "./pages/Campaigns"
 import Volunteer from "./pages/Volunteer"
 import Contact from "./pages/Contact"
+import Donation from "./pages/Donation"
 import Footer from "./components/Footer";
 
 
@@ -21,6 +22,7 @@ function App() {
         <Route path="/campaigns" element={<Campaigns />} />
         <Route path="/volunteer" element={<Volunteer />} />
         <Route path="/contact" element={<Contact />} />
+      <Route path="/donation" element={<Donation />} />
       </Routes>
 
       <Footer />

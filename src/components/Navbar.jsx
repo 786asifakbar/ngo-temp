@@ -67,8 +67,7 @@ const Navbar = () => {
         </ul>
 
         {/* Donate Button */}
-
-        <NavLink to="/donate">
+        <NavLink to="/Donation" className={linkStyle}>
           <button className="hidden md:block bg-green-600 text-white px-5 py-2 rounded-lg hover:bg-green-700">
             Donate
           </button>

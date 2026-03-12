@@ -16,14 +16,14 @@ const Home = () => {
     return (
     <div className="pt-24">
       <Hero />
-      
       <About />
       <Donate />
       <Stats />
       <Team />
+      <Impact />
       <Testimonials />
       <Donation />
-      <Impact />
+      
           
     </div>
   );
